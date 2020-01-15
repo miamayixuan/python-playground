@@ -7,4 +7,4 @@ with open('hello.txt', 'w') as f:
     f.write('Hello, my name is ' + my_name)
 
 
-# by Rasim, Mia, and 
+
