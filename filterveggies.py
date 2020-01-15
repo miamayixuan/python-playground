@@ -26,12 +26,12 @@ with open('green_veggies.json', 'w') as f:
     json.dump(green_vegetables, f)
 
 #output another csv called green_vegetables.csv
-# with open('green_vegetables.csv', 'w') as f:
-#     writer = csv.writer(f)
-#     writer.writerow(['name', 'color'])
-#     writer.writerow(['val1', 'val2'])
-#     writer.writerow(['val1', 'val2'])
-#     writer.writerow(['val1', 'val2'])
+with open('green_vegetables.csv', 'w') as f:
+    writer = csv.writer(f)
+    writer.writerow(['name', 'color'])
+    for veggie in green_vegetables:
+    	writer.writerow([veggie["name"], veggie["color"]])
+
 
 
 
